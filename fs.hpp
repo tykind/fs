@@ -122,3 +122,4 @@ namespace fs
 }
 
 #undef BASE_ID
+#undef GET_FILE_TYPE
