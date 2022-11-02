@@ -33,9 +33,9 @@ namespace fs
 
 		GET_FILE_TYPE
 
-			// Translate type to another
+		// Translate type to another
 
-			template<typename _Ty>
+		template<typename _Ty>
 		std::shared_ptr<_Ty> translate()
 		{
 			return std::make_shared<_Ty>(dynamic_cast<_Ty&>(*this));
@@ -69,9 +69,9 @@ namespace fs
 		BASE_ID;
 		GET_FILE_TYPE
 
-			// Read files content
+		// Read files content
 
-			auto read()
+		auto read()
 		{
 			std::stringstream fileContent;
 			std::ifstream file(path.c_str(), std::ios::ate | std::ios::binary);
@@ -103,9 +103,9 @@ namespace fs
 		BASE_ID;
 		GET_FILE_TYPE
 
-			// Read directory and deduct folder/document
+		// Read directory and deduct folder/document
 
-			std::vector<std::shared_ptr<File>>& read()
+		std::vector<std::shared_ptr<File>>& read()
 		{
 			contents.clear();
 			for (auto const& entry : std::filesystem::directory_iterator{ path })
