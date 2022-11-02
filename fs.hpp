@@ -33,7 +33,7 @@ namespace fs
 
 		GET_FILE_TYPE
 
-		// Translate type to another
+		// Translate the base class into a derived class
 
 		template<typename _Ty>
 		std::shared_ptr<_Ty> translate()
