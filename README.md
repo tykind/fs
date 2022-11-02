@@ -1,5 +1,5 @@
 ### FS
-Some file system wrapper I made.
+Some file system wrapper I made and it's to be known that this is only supported by C++ 20.
 
 Nice folder usage, along side document read/write capabilities.
 
