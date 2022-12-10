@@ -46,9 +46,7 @@ namespace fs
 		File(std::filesystem::path _path) : path{ _path }
 		{
 			if (std::filesystem::exists(path))
-			{
 				exists = true;
-			}
 		}
 	};
 
